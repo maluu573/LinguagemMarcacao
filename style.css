@@ -1,0 +1,71 @@
+/* Seletor universal */
+*{
+    /* Zera a margem do documento */
+    margin: 0;
+   /* Gera um espaçamento interno */
+    padding: 0;
+}
+
+/* Seletor de tipo, aplica o css em uma tag */
+h5{
+    color: blueviolet !important;
+}
+
+/* Seletor de classe */
+.titulo{
+    background-color: crimson;
+    color: aqua;
+    /* Aplica margem em todas as laterais*/
+    /*margin: 10px; */
+    /*margin-left: 20px; 1 */
+    /* Aplico o espaçamento no superior e inferior*/
+    /* Aplico tambem nas laterais esquerda e direita*/
+    /*margin: 0 20px;*/
+    margin: 0 10px 0 0;
+    /* Aplicando espaçamento interno*/
+    /*padding: 10px;*/
+    padding: 0 10px;
+}
+
+p{
+    background-color: gold;
+
+}
+
+
+.imagem{
+    /* Aplicando tamanho em largura*/
+    width: 200px;
+    /* Aplicando tamanho em altura*/
+    height: 200px;
+}
+
+.formulario{
+    background-color: rgb(4, 186, 95);
+     width: 400px;
+    margin: 0 auto;
+    /* Alinha o conteudo interno, centraliza*/
+    text-align: center;
+}
+
+.input-nome{
+    /*Remover as bordas*/
+    border: none;
+    /* Aplica curvatura no canto das bordas */
+    border-radius: 2px;
+    margin-left: 10px;
+    /* Definir opacidade no campo texto */
+    opacity: 70%;
+
+}
+.botao{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    /* Aplicando sombra no texto posição x, y blur */
+    text-shadow: 5px 2px 5px rgba(212, 14, 57, 0.9);
+    margin: 0 auto;
+}
