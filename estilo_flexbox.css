@@ -1,0 +1,60 @@
+.div-1{
+    background-color: blue;
+}.div-1{
+    background-color: blue;
+}
+
+.div-2{
+    background-color: red;
+}
+
+.container{
+    border: 2px solid black;
+    /* limitar o tamanho do elemento */
+    max-width: 400px;
+    margin: 0 auto;
+    /* possibilitar a flexibilidade dos nossos elementos */
+    display: flex;
+}
+
+.img-tamanho{
+    width: 150px;
+    height: 150px;
+}
+
+.alinhar-direita{
+    display: flex;
+    justify-content: right;
+}
+
+.alinhar-centro{
+    display: flex;
+    justify-content: center;
+}
+
+.alinhar-esquerda{
+    display: flex;
+    justify-content: left;
+}
+
+.alinhar-entre{
+    display: flex;
+    /* aloca os elementos nas pontas, e ajusta os elementos nas pontas */
+    justify-content: space-between;
+}
+
+.alinhar-redor{
+    display: flex;
+    /* distribui os itens com espaço ao redor deles */
+    justify-content: space-around;
+}
+
+.alinhar-colunas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quebra-linha{
+    display: flex;
+}
