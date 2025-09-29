@@ -94,3 +94,24 @@ body{
     font-weight: 600;
     cursor: pointer;
 }
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    width: 7vw;
+    text-align: center;
+    transition: transforme 0.2s ease;
+}
+.card-produto:hover{transform: translateY(-Spx);}
+
+.card-produto img{
+
+}
+
+
+
+
+
+
+
+
+
