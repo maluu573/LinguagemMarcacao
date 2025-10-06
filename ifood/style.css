@@ -4,14 +4,14 @@
     --cor-cinza-borda: #e2e2e2;
     --cor-fundo: #f7f7f7;
 }
-/*Zerando as propriedades do documento*/
-*{
+/* Zerando as propriedades do documento */
+* {
     margin: 0;
     padding: 0;
 }
 
 body{
-    /*Apliquei em todo o documento fonte, cor e cor fundo*/
+    /* Apliquei em todo o documento fonte, cor e cor fundo */
     font-family: 'Poppins', sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-cinza-texto);
@@ -20,27 +20,29 @@ body{
     background-color: #fff;
     padding: 15px 0;
     border-bottom: 1px solid var(--cor-cinza-borda);
-    
+
 }
 .logo{
     height: 5vh;
+    
 }
-
 .container{
-    /*Propriedade definea largura maxima que ele pode atingir */
+    /* Propriedade define a largura maxima que ele pode atingir */
     max-width: 1200px;
-    padding:0 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .navegacao{
     display: flex;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .item{
-    /* Remover decoração da tag A */
+    /* Remover decoração da tag a */
     text-decoration: none;
     color: var(--cor-cinza-texto);
     /* Aplicando negrito */
@@ -48,18 +50,17 @@ body{
     padding: 8px 0;
     border-bottom: 3px solid transparent;
 }
-/* ao passar, ficar vermelho */
 .item:focus,
 .item:hover{
     color: var(--cor-vermelho-ifood);
-    border-bottom-color: var(--cor-vermelho-ifood);
+    border-bottom-color: var(--cor-vermelho-ifood) ;
 }
 
 .buscar{
     padding: 10px;
     border: 1px solid var(--cor-cinza-borda);
     border-radius: 8px;
-    width: 10rem;
+    width: 9rem;
 }
 .localizacao{
     display: flex;
@@ -72,13 +73,11 @@ body{
     font-weight: 600;
     font-size: 1rem;
 }
-
 .acao{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
 }
-
 .criar-conta{
     text-decoration: none;
     color: var(--cor-vermelho-ifood);
@@ -87,31 +86,85 @@ body{
 
 .botao-entrar{
     background-color: var(--cor-vermelho-ifood);
-    color:var(--cor-fundo);
+    color: var(--cor-fundo);
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
 }
-.card-produto{
+.card-produtos{
     display: flex;
     flex-direction: column;
     width: 7vw;
     text-align: center;
-    transition: transforme 0.2s ease;
-}
-.card-produto:hover{transform: translateY(-Spx);}
-
-.card-produto img{
-
+    transition: transform 0.2s ease;
 }
 
+.card-produtos:hover{transform: translateY(-5px);}
 
+.card-produtos img{
 
+}
 
+.secao-produtos{
+    display: flex;
+    gap: 5px;
+    overflow-x: scroll;
+}
+.secao-produtos::-webkit-scrollbar{visibility: hidden;}
 
+.container-famosos{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
+.famosos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secao-cards-famosos{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.card-loja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 20vh;
+    border-radius: 50px;
+    flex-shrink: 0; /* Impede que os item encolham*/
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    padding: 5px;
+}
+.card-loja img{
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain;
+    border-radius: 50%;
+}
 
+.rodape-principal{
+    background-color: #575757;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.rodape-container{
+    display: flex;
+    gap: 40px;
+}
 
+ .coluna-rodape {flex: 1;}/*faz com que os elementos ocupem todo o espaco */
+.coluna-rodape h3{margin-bottom: 20px;}
+.coluna-rodape ul {list-style: none;}
+.coluna-rodape ul li{margin-bottom: 10px;}
+.coluna-rodape a {text-decoration: none; color: #e2e2e2; transition: color 0.2s ease;}
+.coluna-rodape a:hover {color: aqua;}
+.icones-sociais a{margin-right: 15px; font-size: 20px;}
