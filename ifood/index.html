@@ -1,134 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ifood - Delivery de comida</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Utilizando uma tag semantica para criar o cabecalho -->
-    <header class="cabecalho">
-      <div class="container">
-        <img src="https://logopng.com.br/logos/ifood-43.png" class="logo" />
-        <!-- Utilizando um nav, para adicionar os menus navegação -->
-        <nav class="navegacao">
-          <a href="#" class="item">Restaurante</a>
-          <a href="#" class="item">Mercado</a>
-          <a href="#" class="item">Bebidas</a>
-          <a href="#" class="item">Farmácia</a>
-          <a href="#" class="item">Pet-shop</a>
-        </nav>
-        <div>
-          <input
-            type="text"
-            placeholder="Busque por item ou loja"
-            class="buscar"
-          />
-          <div class="localizacao">
-            <span>📍</span>
-            <input type="text" value="Andradina, SP" class="texto-local" />
-          </div>
-        </div>
-        <div class="acao">
-          <a href="#" class="criar-conta">Criar Conta</a>
-          <button class="botao-entrar">Entrar</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ifood - Delivery de comida</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Utilizando uma tag semantica para criar o cabecalho -->
+  <header class="cabecalho">
+    <div class="container">
+      <img src="https://logopng.com.br/logos/ifood-43.png" class="logo" />
+      <!-- Utilizando um nav, para adicionar os menus navegação -->
+      <nav class="navegacao">
+        <a href="#" class="item">Restaurante</a>
+        <a href="#" class="item">Mercado</a>
+        <a href="#" class="item">Bebidas</a>
+        <a href="#" class="item">Farmácia</a>
+        <a href="#" class="item">Pet-shop</a>
+      </nav>
+      <div>
+        <input type="text" placeholder="Busque por item ou loja" class="buscar" />
+        <div class="localizacao">
+          <span>📍</span>
+          <input type="text" value="Andradina, SP" class="texto-local" />
         </div>
       </div>
-    </header>
-    <main>
-      <section class="secao-produtos">
-        <!-- Seçao de produtos -->
-         <!-- card de produtos -->
-           <div class="card-produtos">
-            <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5e260bbb382502.29023108.png?lastEdited=1579551913&w=600&h=600&f=webp" alt="">
-            <p>Almoço</p>
-          </div>          <div class="card-produtos">
-            <img src="https://canada1.discourse-cdn.com/ifood/optimized/3X/5/d/5db645f7a75f4fab97eedaa19e7d677c0142663b_2_1024x1024.jpeg" alt="">
-            <p>Promoções</p>
-          </div>
-          <!-- ----------------------------------------------------- -->
-           <div class="card-produtos">
-            <img src="https://institucional.ifood.com.br/wp-content/uploads/2023/10/Capa-mercado-1024x569-1.jpg" alt="">
-            <p>Mercado</p>
-          </div>        
-            <div class="card-produtos">
-            <img src="https://img.freepik.com/fotos-premium/copos-de-diferentes-bebidas-isoladas-em-branco_392895-9656.jpg" alt="">
-            <p>Bebidas</p>
-          </div>
-          <!-- ----------------------------------------------------- -->
-           <div class="card-produtos">
-            <img src="https://lirp.cdn-website.com/33406c6e/dms3rep/multi/opt/marmita-1-640w.jpg" alt="">
-            <p>Marmita</p>
-          </div>
-          <div class="card-produtos">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwbZ0LcEped1pMPFkQkJk8QzU8Hp9--wsnw&s" alt="">
-            <p>Pizza</p>
-          </div>
-      </section>
+      <div class="acao">
+        <a href="#modal-cadastro" class="criar-conta">Criar Conta</a>
+        <button class="botao-entrar">Entrar</button>
+      </div>
+    </div>
 
-    
-      <section class="container-famosos">
-        <!-- Seção de Lojas -->
-         <div class="famosos">
-            <h2>Restaurantes Famosos</h2>
-            <a href="">Ver Mais</a>
-         </div>
-         <div class="secao-cards-famosos">
-            <div class="card-loja">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/634px-McDonald%27s_logo.svg.png" alt="">
-            </div>
-            <div class="card-loja">
-              <img src="https://pngimg.com/d/kfc_PNG50.png" alt="">
-            </div>
-            <div class="card-loja">
-              <img src="https://gkpb.com.br/wp-content/uploads/2021/01/novo-logo-burger-king-2021.png" alt="">
-            </div>
-            <div class="card-loja">
-              <img src="https://cdn.freebiesupply.com/logos/large/2x/pizza-hut-logo-svg-vector.svg" alt="">
-            </div>
-            <div class="card-loja">
-              <img src="https://newsroom.subway.com/image/Subway+Choicemark_thumbnail.png" alt="">
-         </div>
-      </section>
-      <section>
-        <!-- Seção de promoções -->
-      </section>
-    </main>
-     <footer class="rodape-principal">
-        <!-- Seção rodape -->
-         <div class="rodape-container">
-            <div class="coluna-rodape">
-              <h3>iFood</h3>
-              <ul>
-                <li><a href="">Site Institucional</a></li>
-                <li><a href="">Fale conosco</a></li>
-                <li><a href="">Carreiras</a></li>
-                <li><a href="">iFood Shop</a></li>
-              </ul>
-            </div>
-            <div class="coluna-rodape">
-              <h3>Descubra</h3>
-              <ul>
-                <li><a href="">Cadastre seu restaurante</a></li>
-                <li><a href="">iFood para Entregadores</a></li>
-                <li><a href="">Blog iFood</a></li>
-              </ul>
-            </div>
-            <div class="coluna-rodape">
-              <h3>Social</h3>
-              <div class="icones-sociais">
-                <a href="">FB</a><a href="">TW</a><a href="">IG</a><a href="">YT</a>
-              </div>
-            </div>
+    <!-- MODAL CRIAR CONTA -->
+      <div id="modal-cadastro" class="modal-container">
+        <div class="modal-box">
+          <div class="modal-cabecalho">
+            <!-- Cabecalho -->
+             <h2>Criar Conta</h2>
+             <a href="" class="fechar">&times;</a>
+          </div>
 
-         </div>
-      </footer>
-  </body>
+          <form action="" class="formulario">
+            <!-- Corpo -->
+             <div class="grupo-form">
+              <label for="nome">Nome Completo</label>
+              <input id="nome" type="text" placeholder="Digite seu nome completo" required>
+             </div>
+
+             <div class="grupo-form">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="maluviana67@ifood.com" required>
+             </div>
+
+             <div class="grupo-form">
+              <label for="senha">Senha</label>
+              <input id="senha" type="password" placeholder="Crie uma senha forte" required>
+             </div>
+             <button type="submit" class="botao-criar">Criar Conta</button>
+          </form>
+          <div class="modal-rodape">
+            <!-- Rodape -->
+             <p>Já tem conta? <a href="">Entrar</a></p>
+          </div>
+        </div>
+      </div>
+
+
+
+  </header>
+  <main>
+    <section class="secao-produtos">
+      <!-- Seçao de produtos -->
+      <!-- card de produtos -->
+      <div class="card-produtos">
+        <img
+          src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5e260bbb382502.29023108.png?lastEdited=1579551913&w=600&h=600&f=webp"
+          alt="">
+        <p>Almoço</p>
+      </div>
+      <div class="card-produtos">
+        <img
+          src="https://canada1.discourse-cdn.com/ifood/optimized/3X/5/d/5db645f7a75f4fab97eedaa19e7d677c0142663b_2_1024x1024.jpeg"
+          alt="">
+        <p>Promoções</p>
+      </div>
+      <!-- ----------------------------------------------------- -->
+      <div class="card-produtos">
+        <img src="https://institucional.ifood.com.br/wp-content/uploads/2023/10/Capa-mercado-1024x569-1.jpg" alt="">
+        <p>Mercado</p>
+      </div>
+      <div class="card-produtos">
+        <img src="https://img.freepik.com/fotos-premium/copos-de-diferentes-bebidas-isoladas-em-branco_392895-9656.jpg"
+          alt="">
+        <p>Bebidas</p>
+      </div>
+      <!-- ----------------------------------------------------- -->
+      <div class="card-produtos">
+        <img src="https://lirp.cdn-website.com/33406c6e/dms3rep/multi/opt/marmita-1-640w.jpg" alt="">
+        <p>Marmita</p>
+      </div>
+      <div class="card-produtos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwbZ0LcEped1pMPFkQkJk8QzU8Hp9--wsnw&s" alt="">
+        <p>Pizza</p>
+      </div>
+    </section>
+
+
+    <section class="container-famosos">
+      <!-- Seção de Lojas -->
+      <div class="famosos">
+        <h2>Restaurantes Famosos</h2>
+        <a href="">Ver Mais</a>
+      </div>
+      <div class="secao-cards-famosos">
+        <div class="card-loja">
+          <img
+            src="https://pngimg.com/d/mcdonalds_PNG17.png" alt="">
+        </div>
+        <div class="card-loja">
+          <img src="https://pngimg.com/d/kfc_PNG50.png" alt="">
+        </div>
+        <div class="card-loja">
+          <img src="https://gkpb.com.br/wp-content/uploads/2021/01/novo-logo-burger-king-2021.png" alt="">
+        </div>
+        <div class="card-loja">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/pizza-hut-logo-svg-vector.svg" alt="">
+        </div>
+        <div class="card-loja">
+          <img src="https://newsroom.subway.com/image/Subway+Choicemark_thumbnail.png" alt="">
+        </div>
+    </section>
+    <section>
+      <!-- Seção de promoções -->
+    </section>
+  </main>
+
+  <footer class="rodape-principal">
+    <!-- Seção rodape -->
+    <div class="rodape-container">
+      <div class="coluna-rodape">
+        <h3>iFood</h3>
+        <ul>
+          <li><a href="">Site Institucional</a></li>
+          <li><a href="">Fale conosco</a></li>
+          <li><a href="">Carreiras</a></li>
+          <li><a href="">iFood Shop</a></li>
+        </ul>
+      </div>
+      <div class="coluna-rodape">
+        <h3>Descubra</h3>
+        <ul>
+          <li><a href="">Cadastre seu restaurante</a></li>
+          <li><a href="">iFood para Entregadores</a></li>
+          <li><a href="">Blog iFood</a></li>
+        </ul>
+      </div>
+      <div class="coluna-rodape">
+        <h3>Social</h3>
+        <div class="icones-sociais">
+          <a href="">FB</a><a href="">TW</a><a href="">IG</a><a href="">YT</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
 </html>
