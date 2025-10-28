@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de viagens</title>
+    <script defer src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-pink-600">ExploreMundo</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <div class="relative">
+                    <!-- Menu -->
+                     <button class="flex items-center text-gray-400 hover:text-pink-500">    
+                        Destinos
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                     </button>
+                     <div class="hidden absolute left-0 mt-2 w-48">
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-500">Europa</a>
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-500">Asia</a>
+                        <a href="" class="block px-4 py-2 text-sm text-gray-400 hover:bg-pink-500">America</a>
+                     </div>
+                </div>
+                
+                <a href="" class="text-gray-400 hover:text-pink-500">Pacotes</a>
+                <a href="" class="text-gray-400 hover:text-pink-500">Sobre</a>
+                <a href="" class="text-gray-400 hover:text-pink-500">Contatos</a>
+            </div>
+                <button id="btn-hamburguer" class="md:hidden text-gray-600 focus:outline-none">
+                    <!-- Menu hamburguer -->
+                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg";
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path> </svg>
+                </button>
+
+        </nav>
+
+    </header>
+    
+</body>
+</html>
